@@ -1,0 +1,79 @@
+.about_page {
+  height: 91vh;
+  background-color: var(--light-black);
+  color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  z-index: 3;
+}
+.about_title {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: xx-large;
+}
+.about_description {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.skills {
+  margin: 10px;
+}
+.technos {
+  margin: 10px;
+}
+.about {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.profil_pictures {
+  display: flex;
+  justify-content: center;
+}
+.profil_picture {
+  height: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .about_page {
+    width: 82vw;
+    margin-left: 18vw;
+    height: 100vh;
+  }
+
+  .profil_picture {
+    height: 300px;
+
+    --s: 8px; /* size of the frame */
+    --b: 2px; /* border thickness */
+    --w: 200px; /* width of the image */
+    --c: var(--yellow);
+
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2 * var(--s));
+    --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+    background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+      linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+    outline: calc(var(--w) / 2) solid rgba(0, 0, 0, 0);
+    outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .profil_picture:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s) / -2);
+    --_i: calc(100% - 2 * var(--s));
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}

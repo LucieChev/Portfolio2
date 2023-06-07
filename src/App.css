@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+  --black: rgb(15, 15, 15);
+  --light-black: rgb(22, 22, 22);
+  --blue: rgb(22, 22, 155);
+  --dark-green: rgb(61, 111, 55);
+  --yellow: rgb(255, 199, 66);
+  --white: rgb(245, 245, 245);
+}

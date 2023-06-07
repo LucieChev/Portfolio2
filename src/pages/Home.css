@@ -1,0 +1,25 @@
+.home_page {
+  background-color: var(--light-black);
+  height: 91vh;
+  color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  z-index: 3;
+}
+.home_title {
+  padding: 10px;
+  font-size: xx-large;
+}
+.sub_title {
+  padding: 10px;
+  font-size: xx-large;
+}
+@media screen and (min-width: 1024px) {
+  .home_page {
+    width: 82vw;
+    margin-left: 18vw;
+    height: 100vh;
+  }
+}
