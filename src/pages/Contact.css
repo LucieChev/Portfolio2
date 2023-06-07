@@ -1,0 +1,26 @@
+.contact_page {
+  height: 91vh;
+  background-color: var(--light-black);
+  color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  z-index: 3;
+}
+.mail {
+  margin: 10px;
+}
+.phone {
+  margin: 10px;
+}
+.in_progress {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 1024px) {
+  .contact_page {
+    width: 82vw;
+    margin-left: 18vw;
+    height: 100vh;
+  }
+}
