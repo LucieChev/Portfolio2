@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Projects.css";
 import Carousel from "react-multi-carousel";
 import { Button } from "@mui/material";
