@@ -24,11 +24,3 @@
 .project_image:hover {
   transform: scale(1.5);
 }
-
-.button_close {
-  padding: 3px 10px;
-  display: flex;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-}
