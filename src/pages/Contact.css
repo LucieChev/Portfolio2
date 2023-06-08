@@ -5,22 +5,55 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: sticky;
   z-index: 3;
 }
-.mail {
-  margin: 10px;
+.contact_title h2 {
+  margin: 20px 10px;
+  font-size: xx-large;
 }
-.phone {
-  margin: 10px;
+.contact_title p {
+  margin: 20px 10px;
 }
-.in_progress {
-  margin-top: 3rem;
+.form {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.input,
+.textarea {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+.send_button {
+  color: var(--black);
+  background-color: var(--yellow);
+  font-family: bold;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 4px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 @media screen and (min-width: 1024px) {
   .contact_page {
     width: 82vw;
     margin-left: 18vw;
     height: 100vh;
+  }
+  .send_button {
+    cursor: pointer;
+    padding: 5px 12px;
+  }
+  .input {
+    padding: 10px;
+  }
+  .textarea {
+    padding: 20px;
   }
 }

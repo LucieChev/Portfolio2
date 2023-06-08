@@ -55,6 +55,9 @@ export default function Projects() {
         removeArrowOnDeviceType={["mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
+        showDots
+        arrows
+        swipeable
       >
         <div className="projects_all">
           <h2>Project 1</h2>
