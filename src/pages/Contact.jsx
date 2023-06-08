@@ -26,34 +26,36 @@ export default function Contact() {
 
   return (
     <div className="contact_page">
-      <div className="contact_title">
-        <h2>Contact me</h2>
-        <p>If you want to contact me, you can send me an email.</p>
-      </div>
-      <div className="form">
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="center">
-            <label>Name</label>
-          </div>
-          <div className="center">
-            <input type="text" name="name" className="input" />
-          </div>
-          <div className="center">
-            <label>Email</label>
-          </div>
-          <div className="center">
-            <input type="email" name="email" className="input" />
-          </div>
-          <div className="center">
-            <label>Message</label>
-          </div>
-          <div className="center">
-            <textarea name="message" className="textarea" />
-          </div>
-          <div className="center">
-            <input type="submit" value="Send" className="send_button" />
-          </div>
-        </form>
+      <div className="contact_card">
+        <div className="contact_title">
+          <h2>Contact me</h2>
+          <p>If you want to contact me, you can send me an email.</p>
+        </div>
+        <div className="form">
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="center">
+              <label>Name</label>
+            </div>
+            <div className="center">
+              <input type="text" name="name" className="input" />
+            </div>
+            <div className="center">
+              <label>Email</label>
+            </div>
+            <div className="center">
+              <input type="email" name="email" className="input" />
+            </div>
+            <div className="center">
+              <label>Message</label>
+            </div>
+            <div className="center">
+              <textarea name="message" className="textarea" />
+            </div>
+            <div className="center">
+              <input type="submit" value="SEND" className="send_button" />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
