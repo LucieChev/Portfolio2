@@ -47,7 +47,7 @@
   .profil_picture {
     height: 300px;
 
-    --s: 8px; /* size of the frame */
+    --s: 1px; /* size of the frame */
     --b: 2px; /* border thickness */
     --w: 200px; /* width of the image */
     --c: var(--yellow);

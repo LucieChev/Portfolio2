@@ -1,6 +1,11 @@
 .contact_page {
   height: 91vh;
-  background-color: var(--light-black);
+  background: radial-gradient(
+    circle,
+    rgba(177, 164, 69, 1) 0%,
+    rgba(83, 79, 30, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
   color: var(--yellow);
   display: flex;
   flex-direction: column;
@@ -9,12 +14,23 @@
   position: sticky;
   z-index: 3;
 }
+.contact_card {
+  background-color: var(--light-black);
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: var(--light-black) 0px 50px 100px -20px,
+    var(--light-black) 0px 30px 60px -30px;
+}
 .contact_title h2 {
   margin: 20px 10px;
   font-size: xx-large;
+  display: flex;
+  justify-content: center;
 }
 .contact_title p {
   margin: 20px 10px;
+  display: flex;
+  justify-content: center;
 }
 .form {
   margin: 10px;
@@ -45,6 +61,9 @@
     width: 82vw;
     margin-left: 18vw;
     height: 100vh;
+  }
+  .contact_card {
+    padding: 10px;
   }
   .send_button {
     cursor: pointer;
