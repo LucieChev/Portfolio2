@@ -1,13 +1,18 @@
 /* Header */
 .header {
   background-color: var(--black);
+  color: var(--yellow);
 }
 /* Logo */
 .logo {
-  height: 30px;
-  width: 30px;
-  background-color: var(--white);
+  height: 15px;
+  width: 15px;
   margin: 12px;
+}
+.logos {
+  color: var(--yellow);
+  display: flex;
+  justify-content: center;
 }
 /* Nav menu */
 .nav {
@@ -19,6 +24,8 @@
   max-height: 0;
   transition: max-height 0.1s ease-out;
   z-index: 4;
+  display: flex;
+  position: fixed;
 }
 .activeNavContent,
 .navContent {
@@ -26,21 +33,16 @@
   list-style-type: none;
   text-decoration: none;
 }
-.activeNavContent,
-.navContent:hover {
-  background-color: var(--yellow);
-  color: var(--black);
-  cursor: pointer;
-}
+
 .menu li {
   padding: 10px;
   color: var(--yellow);
   text-decoration: none;
 }
-.menu li:hover {
-  color: var(--black);
-  background-color: var(--yellow);
+.menu a {
+  color: var(--yellow);
 }
+
 /* Menu Icon */
 .hamb {
   padding: 20px;
@@ -93,44 +95,20 @@
   transform: rotate(45deg);
   top: 0;
 }
-/* @media screen and (max-width: 1024px) {
-  .logos {
-    display: none;
-  }
-} */
-
-/* Responsiveness */
-@media screen and (min-width: 1024px) {
-  .nav {
-    max-height: none;
-    top: 0;
-    position: relative;
-    float: right;
-    width: fit-content;
-    background-color: transparent;
-  }
-  .menu li {
-    float: right;
-  }
-  .menu a:hover {
-    background-color: transparent;
-  }
-
-  .hamb {
-    display: none;
-  }
-}
 
 /*NavBar Desktop*/
 @media screen and (min-width: 1024px) {
   .nav {
-    background-color: var(--black);
+    max-height: none;
     width: 18vw;
     height: 100dvh;
     display: flex;
     position: fixed;
     align-items: center;
-    justify-content: center;
+  }
+
+  .hamb {
+    display: none;
   }
 
   .activeNavContent,
@@ -140,9 +118,6 @@
     align-items: center;
     width: 18vw;
     height: 50px;
-    color: var(--yellow);
-    list-style-type: none;
-    text-decoration: none;
   }
   .activeNavContent,
   .navContent:hover {
@@ -151,14 +126,5 @@
     width: 18vw;
     height: 50px;
     cursor: pointer;
-  }
-  .logos {
-    gap: 12px;
-    margin-left: 4rem;
-  }
-  .logo {
-    height: 30px;
-    width: 30px;
-    background-color: var(--white);
   }
 }

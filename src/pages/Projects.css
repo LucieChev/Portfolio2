@@ -1,5 +1,11 @@
 .projects_page {
-  background-color: var(--light-black);
+  height: 91vh;
+  background: radial-gradient(
+    circle,
+    rgba(177, 164, 69, 1) 0%,
+    rgba(83, 79, 30, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
   color: var(--yellow);
   display: flex;
   flex-direction: column;
@@ -16,14 +22,16 @@
 .projects_description {
   display: flex;
   justify-content: center;
-  margin: 1rem;
 }
 .projects_all {
-  margin-top: 4rem;
+  padding-top: 30px;
+  margin: 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 500px;
+  background-color: var(--light-black);
+  border-radius: 8px;
 }
 .projects_card {
   margin: 2rem 1rem;
@@ -34,5 +42,6 @@
   .projects_page {
     width: 82vw;
     margin-left: 18vw;
+    height: 100vh;
   }
 }

@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import githubLogo from "../assets/logo/github.png";
-import linkedinLogo from "../assets/logo/th.jpg";
 
 import "./NavBar.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function NavBar() {
   const [isActive] = useState(false);
@@ -16,47 +15,53 @@ export default function NavBar() {
       </label>
       <nav className="nav">
         <ul className="menu">
-          <li>
-            <NavLink
-              to="/"
-              className={isActive ? "activeNavContent" : "navContent"}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              className={isActive ? "activeNavContent" : "navContent"}
-            >
-              About me
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/projects"
-              className={isActive ? "activeNavContent" : "navContent"}
-            >
-              My projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={isActive ? "activeNavContent" : "navContent"}
-            >
-              Contact me
-            </NavLink>
-          </li>
-          <div className="logos">
-            <a href="https://github.com/LucieChev">
-              <img src={githubLogo} alt="github-page" className="logo" />
-            </a>
-            <a href="https://www.linkedin.com/in/lucie-chev/">
-              <img src={linkedinLogo} alt="github-page" className="logo" />
-            </a>
+          <div>
+            <li>
+              <NavLink
+                to="/"
+                className={isActive ? "activeNavContent" : "navContent"}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={isActive ? "activeNavContent" : "navContent"}
+              >
+                About me
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/projects"
+                className={isActive ? "activeNavContent" : "navContent"}
+              >
+                My projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={isActive ? "activeNavContent" : "navContent"}
+              >
+                Contact me
+              </NavLink>
+            </li>
+
+            <div className="logos">
+              <div className="logo">
+                <a href="https://github.com/LucieChev">
+                  <FaGithub />
+                </a>
+              </div>
+              <div className="logo">
+                <a href="https://www.linkedin.com/in/lucie-chev/">
+                  <FaLinkedin />
+                </a>
+              </div>
+            </div>
           </div>
-          4{" "}
         </ul>
       </nav>
     </div>
