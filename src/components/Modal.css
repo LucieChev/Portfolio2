@@ -2,25 +2,35 @@
   position: absolute;
   z-index: 20;
   background-color: var(--light-black);
-  min-height: 100vh;
   color: var(--yellow);
+  border-radius: 8px;
+  display: flex;
+  min-height: 450px;
+}
+.modal_card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .explain_project {
-  display: flex;
-  justify-content: center;
   padding: 20px;
+  font-size: small;
 }
 .project_card {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
 }
 .project_image {
+  overflow: hidden;
   height: 80%;
   width: 70%;
+  transition: transform 1s;
 }
 .project_image:hover {
-  transform: scale(1.5);
+  transform: scale(2);
+  z-index: 21;
 }

@@ -9,7 +9,13 @@ import animalz4 from "../assets/Animalz4.png";
 export default function Animalz({ setShowModal }) {
   return (
     <div className="modal_page">
-      <div className="modal_project">
+      <div className="modal_card">
+        <div className="project_card">
+          <img src={animalz} alt="Animalz2" className="project_image" />
+          <img src={animalz2} alt="Animalz2" className="project_image" />
+          <img src={animalz3} alt="Animalz3" className="project_image" />
+          <img src={animalz4} alt="Animalz4" className="project_image" />
+        </div>
         <div className="explain_project">
           <p>
             This is our #1 hackathon, done as part of our Wild Code School
@@ -21,17 +27,16 @@ export default function Animalz({ setShowModal }) {
             duration: 24h. We used: React, 2 APIs, a Database, LEAFLET.{" "}
           </p>
         </div>
-        <div className="project_card">
-          <img src={animalz} alt="Animalz2" className="project_image" />
-          <img src={animalz2} alt="Animalz2" className="project_image" />
-          <img src={animalz3} alt="Animalz3" className="project_image" />
-          <img src={animalz4} alt="Animalz4" className="project_image" />
-        </div>
         <Button
           size="small"
           variant="contained"
           cursor="pointer"
-          sx={{ color: "black", bgcolor: "var(--yellow)", fontFamily: "bold" }}
+          sx={{
+            color: "black",
+            bgcolor: "var(--yellow)",
+            fontFamily: "bold",
+            marginTop: "20px",
+          }}
           onClick={() => setShowModal(false)}
         >
           Close
