@@ -6,6 +6,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function NavBar() {
   const [isActive] = useState(false);
+  function closeHamb() {
+    isActive(false);
+  }
 
   return (
     <div className="header">
@@ -20,6 +23,7 @@ export default function NavBar() {
               <NavLink
                 to="/"
                 className={isActive ? "activeNavContent" : "navContent"}
+                onClick={() => closeHamb()}
               >
                 Home
               </NavLink>
@@ -28,6 +32,7 @@ export default function NavBar() {
               <NavLink
                 to="/about"
                 className={isActive ? "activeNavContent" : "navContent"}
+                onClick={() => closeHamb()}
               >
                 About me
               </NavLink>
@@ -36,6 +41,7 @@ export default function NavBar() {
               <NavLink
                 to="/projects"
                 className={isActive ? "activeNavContent" : "navContent"}
+                onClick={() => closeHamb()}
               >
                 My projects
               </NavLink>
@@ -44,6 +50,7 @@ export default function NavBar() {
               <NavLink
                 to="/contact"
                 className={isActive ? "activeNavContent" : "navContent"}
+                onClick={() => closeHamb()}
               >
                 Contact me
               </NavLink>
@@ -52,12 +59,12 @@ export default function NavBar() {
             <div className="logos">
               <div className="logo">
                 <a href="https://github.com/LucieChev">
-                  <FaGithub />
+                  <FaGithub onClick={() => closeHamb()} />
                 </a>
               </div>
               <div className="logo">
                 <a href="https://www.linkedin.com/in/lucie-chev/">
-                  <FaLinkedin />
+                  <FaLinkedin onClick={() => closeHamb()} />
                 </a>
               </div>
             </div>

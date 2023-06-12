@@ -42,7 +42,9 @@
 .menu a {
   color: var(--yellow);
 }
-
+.activeNavContent {
+  display: none;
+}
 /* Menu Icon */
 .hamb {
   padding: 20px;
@@ -57,7 +59,9 @@
   position: relative;
   width: 24px;
   margin: 1rem;
-} /* Style span tag */
+}
+
+/* Style span tag */
 
 .hamb-line::before,
 .hamb-line::after {
@@ -78,7 +82,8 @@
 
 .side-menu {
   display: none;
-} /* Hide checkbox */
+}
+/* Hide checkbox */
 
 /* Toggle menu icon */
 .side-menu:checked ~ nav {

@@ -10,8 +10,6 @@ export default function About() {
       <div className="about_card">
         <div className="about_title">
           <h2>About me</h2>
-        </div>
-        <div className="about_description">
           <p>
             I am in the process of retraining, I worked for more than 10 years
             in the paramedical field, and I decided to retrain to learn code and

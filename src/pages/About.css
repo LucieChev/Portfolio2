@@ -1,5 +1,4 @@
 .about_page {
-  height: 91vh;
   background: radial-gradient(
     circle,
     rgba(177, 164, 69, 1) 0%,
@@ -21,16 +20,17 @@
   box-shadow: var(--light-black) 0px 50px 100px -20px,
     var(--light-black) 0px 30px 60px -30px;
 }
-.about_title {
+.about_title h2 {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 20px 10px;
   font-size: xx-large;
 }
-.about_description {
+.about_title p {
+  margin: 20px 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 1rem;
 }
 .skills {
   margin: 10px;
