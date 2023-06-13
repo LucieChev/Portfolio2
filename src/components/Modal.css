@@ -31,6 +31,6 @@
   transition: transform 1s;
 }
 .project_image:hover {
-  transform: scale(2);
+  transform: scale(0.2);
   z-index: 21;
 }
