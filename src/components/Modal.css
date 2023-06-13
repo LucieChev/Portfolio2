@@ -6,6 +6,7 @@
   border-radius: 8px;
   display: flex;
   min-height: 450px;
+  width: 270px;
 }
 .modal_card {
   display: flex;
@@ -18,19 +19,24 @@
   font-size: small;
 }
 .project_card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
 }
 .project_image {
   overflow: hidden;
+  margin: 1rem;
   height: 80%;
   width: 70%;
-  transition: transform 1s;
+  transition: transform 0.2s;
 }
 .project_image:hover {
-  transform: scale(0.2);
+  transform: scale(2);
   z-index: 21;
+}
+@media screen and (min-width: 1024px) {
+  .modal_page {
+    width: 320px;
+  }
 }

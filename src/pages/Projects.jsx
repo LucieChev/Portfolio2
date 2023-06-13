@@ -70,7 +70,7 @@ export default function Projects() {
             sx={{
               color: "black",
               bgcolor: "var(--yellow)",
-              fontFamily: "bold",
+              fontFamily: "Quicksand",
             }}
             onClick={onClickHandleWildquiz}
           >
@@ -97,7 +97,7 @@ export default function Projects() {
             sx={{
               color: "black",
               bgcolor: "var(--yellow)",
-              fontFamily: "bold",
+              fontFamily: "Quicksand",
             }}
             onClick={onClickHandleKeskonregarde}
           >
@@ -119,7 +119,7 @@ export default function Projects() {
             sx={{
               color: "black",
               bgcolor: "var(--yellow)",
-              fontFamily: "bold",
+              fontFamily: "Quicksand",
             }}
             onClick={onClickHandleAnimalz}
           >
