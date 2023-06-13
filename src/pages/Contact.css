@@ -46,7 +46,7 @@
 .send_button {
   color: var(--black);
   background-color: var(--yellow);
-  font-family: bold;
+  font-family: "Quicksand";
   padding: 3px 10px;
   border: none;
   border-radius: 4px;
